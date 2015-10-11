@@ -1,0 +1,42 @@
+/* ==========================================================
+! 05. FOOTER
+========================================================== */
+.social-icons {
+  font-size: 3em;
+  text-align: right;
+  display: none;
+}
+@media (min-width: @screen-xs) {
+  .social-icons {
+    display: block;
+  }
+}
+.social-icons a {
+  color: @white;
+  transition: all 0.3s ease-in-out;
+  opacity: 1;
+}
+.social-icons a:hover {
+  opacity: 0.7;
+}
+.footer-social-icons {
+  margin-top: 3em;
+  text-align: center;
+  border-radius: 10px;
+  background: rgba(0,0,0,.1);
+  box-shadow: inset 0 0 5px rgba(0,0,0,.3);
+}
+.footer-social-icons a {
+  color: @white;
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  font-size: 2em;
+  padding-top: .3em;
+  margin: .5em;
+}
+.footer-social-icons a:hover {
+  color: @brand-orange;
+}

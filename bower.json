@@ -1,0 +1,35 @@
+{
+  "name": "averywolkinhadzi",
+  "version": "0.0.0",
+  "homepage": "https://github.com/averyhadzi/averywolkinhadzi",
+  "authors": [
+    "Dfuzr LLC."
+  ],
+  "description": "Avery Wolkin Hadzi's Online Portfolio",
+  "main": "index.js",
+  "moduleType": [
+    "amd",
+    "globals"
+  ],
+  "keywords": [
+    "Avery",
+    "Wolkin",
+    "Hadzi"
+  ],
+  "license": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "1.11.2",
+    "bootstrap": "3.3.4",
+    "waypoints": "~3.1.1",
+    "font-awesome": "~4.3.0",
+    "jquery.localScroll": "~1.4.0"
+  }
+}
