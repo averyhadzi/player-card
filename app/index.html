@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Avery Wolkin Hadzi - Web Designer and Front-end Developer</title>
+<title>Avery Wolkin Hadzi</title>
 
 <!-- Favicons
 ================================================== -->
@@ -15,17 +15,18 @@
 
 <!-- >> CSS
 ============================================================================== -->
-<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css" />
+<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<!-- Font Awesome -->
+<link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 <!-- Nivo Lightbox -->
-<link href="scripts/vendor/nivo-lightbox.css" rel="stylesheet">
-<link rel="stylesheet" href="scripts/vendor/default.css" type="text/css" />
+<link href="vendor/nivo-lightbox/nivo-lightbox.css" rel="stylesheet">
+<link rel="stylesheet" href="vendor/nivo-lightbox/themes/default/default.css" type="text/css" />
   <!-- /Nivo Lightbox -->
   <!-- Perfect ScrollBar -->
-<link href="scripts/vendor/perfect-scrollbar.min.css" rel="stylesheet">
+<link href="vendor/perfect-scrollbar/css/perfect-scrollbar.min.css" rel="stylesheet">
 <!-- owl carousel -->
-<link href="scripts/vendor/owl.carousel.css" rel="stylesheet">
-<link href="scripts/vendor/owl.theme.css" rel="stylesheet">
+<link href="vendor/owl.carousel/owl-carousel/owl.carousel.css" rel="stylesheet">
+<link href="vendor/owl.carousel/owl-carousel/owl.theme.css" rel="stylesheet">
 <!-- Main Styles -->
 <link href="styles/css/main.css" rel="stylesheet">
 
@@ -55,7 +56,7 @@
 
 <!-- Main Content
 ================================================== -->
-<section id="body" class="">
+<section id="body">
   <div class="container">
     <!-- MAIN MENU -->
     <div class="nav" id="navigation">
@@ -70,6 +71,7 @@
     <!-- /MAIN MENU -->
     <!-- SECTION: vCard Body  --> 
     <div class="section-vcardbody section-home" id="section-home">
+      <!-- <button class="trigger" data-effect="st-effect-9"><i class="fa fa-bars"></i></button> -->
       <!-- Profile pic-->
       <div class="vcard-profile-pic">
         <img src="images/profile.png" id="profile2"  alt=""/>
@@ -94,11 +96,8 @@
       <div class="vcard-footer">
         <!-- Social Icons -->
         <div class="footer-social-icons">
-          <a href="#"><i class="fa fa-instagram"></i></a>
-          <a href="#"><i class="fa fa-facebook"></i></a>
-          <a href="#"><i class="fa fa-twitter"></i></a>
-          <a href="#"><i class="fa fa-linkedin"></i></a>
-          <a href="#"><i class="fa fa-youtube"></i></a>
+          <a href="https://twitter.com/averyhadzi"><i class="fa fa-twitter"></i></a>
+          <a href="https://www.linkedin.com/in/averywolkinhadzi"><i class="fa fa-linkedin"></i></a>
         </div>
         <!-- /Social Icons -->
       </div>
@@ -168,7 +167,7 @@
                     <h3 class="section-item-title-1">TapInfluence</h3>
                     <!-- /Work Place -->
                     <!-- Job Time -->
-                    <h4 class="job">UI Designer - <span class="job-date">May 2011 - July 2014</span></h4>
+                    <h4 class="job">Digital Producer - <span class="job-date">May 2011 - July 2014</span></h4>
                     <!-- /Job Time-->
                     <!-- content -->
                     <div class="graduation-description">
@@ -192,11 +191,11 @@
                     <h3 class="section-item-title-1">RTD</h3>
                     <!-- /Work Place -->
                     <!-- Job Time -->
-                    <h4 class="job">Web Intern - <span class="job-date">Summer 2010</span></h4>
+                    <h4 class="job">Web Design Intern - <span class="job-date">Summer 2010</span></h4>
                     <!-- /Job Time-->
                     <!-- content -->
                     <div class="graduation-description">
-                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                      <p>General web design and layout, email template design and layout, and various creative projects for screen and print media.</p>
                     </div>
                     <!-- /Content -->
         </div>
@@ -208,11 +207,11 @@
                     <h3 class="section-item-title-1">CU Online</h3>
                     <!-- /Work Place -->
                     <!-- Job Time -->
-                    <h4 class="job">Help Desk - <span class="job-date">Dec 2007 - May 2010</span></h4>
+                    <h4 class="job">Program Assistant - <span class="job-date">Dec 2007 - May 2010</span></h4>
                     <!-- /Job Time-->
                     <!-- content -->
                     <div class="graduation-description">
-                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                      <p>Assisted students and faculty with web-based education platforms, such as eCollege and Blackboard.</p>
                     </div>
                     <!-- /Content -->
         </div>
@@ -225,16 +224,11 @@
               <!-- Resume Item -->
         <div class="resume-item">
           <!-- Graduation title -->
-                    <h3 class="section-item-title-1">BFA Digital Design</h3>
+                    <h3 class="section-item-title-1">BFA, Digital Design</h3>
                     <!-- /Graduation title -->
                     <!-- Graduation time -->
                     <h4 class="graduation-time">University of Colorado at Denver - <span class="graduation-date">Graduation May 2011</span></h4>
                     <!-- /Graduation time -->
-                    <!-- content -->
-                    <div class="graduation-description">
-                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                    </div>
-                    <!-- /Content -->
         </div>
               <!-- /Resume Item -->
     
@@ -586,17 +580,17 @@
     
               <div class="map">
                 <div class="map-overlay"></div>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8352.985568651915!2d-0.12905994797222892!3d51.50665753790812!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon%2C+UK!5e0!3m2!1spt-BR!2sbr!4v1443128181953" height="250" style="border:0" allowfullscreen></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d392565.2037547804!2d-105.13529645012136!3d39.76400211690762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876b80aa231f17cf%3A0x118ef4f8278a36d6!2sDenver%2C+CO!5e0!3m2!1sen!2sus!4v1444665900575" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
               </div>
     
               <!-- Contact infos -->                 
                 <div class="contact-infos">
                   <h4 class="contact-subtitle-1"><i class="fa fa-map"></i>&nbsp;   Address</h4>
-                  <p>451 Lorem Ipsum, London - Uk</p>
+                  <p>Denver, CO, USA</p>
                   <h4 class="contact-subtitle-1"><i class="fa fa-phone-square"></i>&nbsp; Phone</h4>
-                  <p>+61 3 8376 6284</p>
-                  <h4 class="contact-subtitle-1"><i class="fa fa-envelope"></i>&nbsp; Mail</h4>
-                  <p>john.Rex@dotrex.com</p>
+                  <p>720.295.4034</p>
+                  <!-- <h4 class="contact-subtitle-1"><i class="fa fa-envelope"></i>&nbsp; Mail</h4>
+                  <p>averywolkin@gmail.com</p> -->
                 </div>
                 <!-- /Contact infos --> 
     
@@ -636,63 +630,84 @@
     <!-- /SECTION: CONTACT  --> 
     
     
-    <!-- Contact Form - Ajax Messages
-    ========================================================= -->
-    <!-- Form Sucess -->
-    <!-- <div class="form-result modal-wrap" id="contactSuccess">
-      <div class="modal-bg"></div>
-      <div class="modal-content">
-        <h4 class="modal-title"><i class="fa fa-check-circle"></i> Success!</h4>
-        <p>Your message has been sent to us.</p>
-      </div>
-    </div> -->
-    <!-- /Form Sucess -->
-    <!-- form-error -->
-    <!-- <div class="form-result modal-wrap" id="contactError">
-      <div class="modal-bg"></div>
-      <div class="modal-content">
-        <h4 class="modal-title"><i class="fa fa-times"></i> Error</h4>
-        <p>There was an error sending your message.</p>
-      </div>
-    </div> -->
-    <!-- /form-error -->
-    
   </div>
 </section>
+  </div>
+
+</section>
+<!-- /Main Content
+================================================== -->
+
 <!-- Contact Form - Ajax Messages
 ========================================================= -->
+<!-- Form Success -->
+<div class="form-result modal-wrap" id="contactSuccess">
+  <div class="modal-bg"></div>
+  <div class="modal-content">
+    <h4 class="modal-title"><i class="fa fa-check-circle"></i> Success!</h4>
+    <p>Your message has been sent to us.</p>
+  </div>
+</div>
+<!-- /Form Success -->
+<!-- form-error -->
+<div class="form-result modal-wrap" id="contactError">
+  <div class="modal-bg"></div>
+  <div class="modal-content">
+    <h4 class="modal-title"><i class="fa fa-times"></i> Error</h4>
+    <p>There was an error sending your message.</p>
+  </div>
+</div>
+<!-- /form-error -->
+
+<!-- Contact Form - Ajax Messages
+========================================================= -->
+
+<!-- Google Analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-39686924-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
 
 
 <!-- >> JS
 ============================================================================== -->
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<!-- Load jQ from cloudflare if not cached -->
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="vendor/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
-
-<script src="scripts/vendor/validate.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="vendor/validate.js"></script>
 <!-- Holder JS -->
-<script src="scripts/vendor/holder.js"></script>
+<script src="vendor/holder.js"></script>
 <!-- Modal box-->
-<script src="scripts/vendor/nivo-lightbox.min.js"></script>
+<script src="vendor/nivo-lightbox/nivo-lightbox.min.js"></script>
 <!-- /Modal Box -->
 <!-- Perfect ScrolBar -->
-<script src="scripts/vendor/perfect-scrollbar.jquery.min.js"></script>
+<!-- <script src="vendor/perfect-scrollbar/js/min/perfect-scrollbar.jquery.min.js"></script> -->
 <!-- /Perfect ScrolBar -->
-<!-- Owl Caroulsel -->
-<script src="scripts/vendor/owl.carousel.js"></script>
+<!-- Owl Carousel -->
+<script src="vendor/owl.carousel/owl-carousel/owl.carousel.js"></script>
 <!-- Google Maps -->
 <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+<!-- Cross-browser -->
+<script src="vendor/cross-browser.js"></script>
+<!-- Mobile Menu Effects -->
+<!-- <script src="vendor/classie.js" type="text/javascript"></script>
+<script src="vendor/sidebarEffects.js" type="text/javascript"></script> -->
 <!-- Main Scripts -->
-<script src="scripts/main-2.js"></script>
-
+<script src="js/main.js"></script>
 
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 <!--[if lt IE 9]>
-  <script src="scripts/vendor/html5shiv.js"></script>
-  <script src="scripts/vendor/respond.min.js"></script>
+  <script src="vendor/html5shiv.js"></script>
+  <script src="vendor/respond.min.js"></script>
 <![endif]-->
 <!-- >> /JS
 ============================================================================= -->
