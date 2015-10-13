@@ -7,8 +7,7 @@ var gulp = require('gulp'),
 
 gulp.task('styles', function () {
   return gulp.src([
-      'app/styles/less/main.less',
-      'app/styles/less/ie.less'
+      'app/styles/less/main.less'
     ])
     .pipe($.less())
     .pipe(gulp.dest('app/styles/css'));
@@ -33,7 +32,9 @@ gulp.task('copy', ['clean'], function () {
   return gulp.src([
       'app/fonts/**/*',
       'app/bower_components/jquery/dist/**/*',
-      'app/*.{png,ico,xml}'
+      'app/*.{png,ico,xml}',
+      'app/php/**/*',
+      'app/js/**/*'
     ])
     .pipe($.copy('dist', {
       prefix : 1
