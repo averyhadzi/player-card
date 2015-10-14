@@ -31,6 +31,14 @@
       text-decoration: none;
       z-index: 1;
 
+      i {
+        padding-right: 1em;
+        display: inline;
+      }
+      span {
+        display: inline;
+      }
+
       &:active, &:visited {
         text-decoration: none;
       }
@@ -60,8 +68,36 @@
     }
   }
 
-  @media (min-width: @screen-sm) {  
+  @media (min-width: @screen-lg) {  
     display: block;
+    a {
+      i {
+        display: inline;
+      }
+    }
+  }
+
+  // @media (min-width: @screen-md) {  
+  //   display: block;
+  //   a {
+  //     i {
+  //       display: none;
+  //     }
+  //   }
+  // }
+  @media screen and (max-width: @screen-lg){
+    a {
+      text-align: center;
+      i {
+        padding: 0;
+        display: block;
+        font-size: 2em;
+        width: 100%;
+      }
+      span {
+        display: none;
+      }
+    }
   }
 
   @media (max-width: @screen-sm) {  
