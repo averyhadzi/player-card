@@ -31,10 +31,12 @@ gulp.task('lint', function () {
 gulp.task('copy', ['clean'], function () {
   return gulp.src([
       'app/fonts/**/*',
+      'app/styles/css/*',
       'app/bower_components/jquery/dist/**/*',
       'app/*.{png,ico,xml}',
       'app/php/**/*',
-      'app/js/**/*'
+      'app/js/**/*',
+      'app/vendor/**/*'
     ])
     .pipe($.copy('dist', {
       prefix : 1
