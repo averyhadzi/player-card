@@ -21,7 +21,7 @@
 
 .project-thumbnail {
   display: block;
-  background-size: auto 100%;
+  background-size: 100%;
   background-position: center center;
   background-repeat: no-repeat;
   height: 250px;
@@ -38,6 +38,9 @@
     .project-title, span.see-more {
       transform: translateY(0px);
     }  
+  }
+  &.dark {
+    background-color: @brand-gray;
   }
 }
 
