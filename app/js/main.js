@@ -168,6 +168,16 @@ $('.modal-wrap').click(function(){
   $('.modal-wrap').fadeOut(300);
 });   
 
+
+// Slick slider for Portfolio
+// $('.projects-list').slick({
+//     initialSlide: 0,
+//     slidesToShow: 1,
+//     slidesToScroll: 1,
+//     arrows: true,
+//     focusOnSelect: true
+// });
+
 //End - Document Ready
 });
 

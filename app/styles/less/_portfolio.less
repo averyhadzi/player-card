@@ -4,10 +4,10 @@
 ========================================================== */
 .project-item {  
   padding: 0;  
-  width: 40%;
+  // width: 40%;
   // max-width: 250px;
   overflow: hidden;
-  float: left;
+  // float: left;
   margin: 1em;
   position: relative;
   opacity: 1;
@@ -41,6 +41,14 @@
   }
   &.dark {
     background-color: @brand-gray;
+  }
+  img {
+    max-width: 250px;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }
 
