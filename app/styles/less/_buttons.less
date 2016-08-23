@@ -30,6 +30,10 @@ a:focus {
   position: relative;
   overflow: hidden;
   z-index: 1;
+
+  &:active, &:visited {
+    color: @white;
+  }
 }
 .btn-default:before {
   content: '';

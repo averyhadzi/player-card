@@ -122,7 +122,6 @@ $('.back-to-top').on('click', function() {
 
 $(window).scroll(function(){
   if($(this).scrollTop() > $('#section-home').height()){
-    console.log('true')
     $('.back-to-top').addClass('active');
   } else {
     $('.back-to-top').removeClass('active');
