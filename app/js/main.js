@@ -61,11 +61,13 @@ $('.map').on('mouseleave', function(){
 var linkHome = 0;
 var linkPage = '';
 
-function pageOn(){
+function pageOn(anchor){
     $('.nav').addClass('main-menu-pgactive');
     $('#section-home').addClass('section-vcardbody-pgactive');    
     $('.profileActive').removeClass('profileActive');    
     $('#profile2').addClass('profileActive');
+
+    $('html,body').animate({scrollTop: $(anchor).offset().top},'slow');
     
     linkHome = 1;
 }
@@ -87,7 +89,7 @@ $(".link-page").on('click', function(event){
   linkPage = $(this).attr('href');
   $('.section-page-active').removeClass('section-page-active');
   $(linkPage).addClass('section-page-active');
-  pageOn();
+  pageOn(linkPage);
 });
 
 
@@ -103,6 +105,30 @@ $(".link-home").on('click', function(event){
     pageOff();
   }  
 });
+
+$('button.trigger').on('click', function(){
+  if(!$(this).hasClass('active')) {
+    $(this).toggleClass('active');
+    $('#section-home').css('margin-left', '200px');
+  } else {
+    $(this).toggleClass('active');
+    $('#section-home').css('margin-left', '0');
+  }
+});
+
+$('.back-to-top').on('click', function() {
+  $('html,body').animate({scrollTop: 0},'slow');
+});
+
+$(window).scroll(function(){
+  if($(this).scrollTop() > $('#section-home').height()){
+    console.log('true')
+    $('.back-to-top').addClass('active');
+  } else {
+    $('.back-to-top').removeClass('active');
+  }
+});
+  
 
 //==============___Blog - Ajax___================
 function loadPost(){

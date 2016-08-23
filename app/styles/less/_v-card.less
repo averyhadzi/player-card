@@ -35,19 +35,23 @@
     left: 15%;
   }
 
-  @media (min-width: @screen-sm) {
+  @media screen and (min-width: @screen-md) {
     position: absolute;
     top: 0;
     bottom: 0;
-    left: 10%;
+    left: 10vw;
     height: 100%;
     width: 40%;
     padding: 2em 2em 1em 2em;
   }
 
+  // @media screen and (max-width: @screen-lg) {
+  //   left: 0;
+  // }
+
 }
 
-@media (min-width: @screen-sm) {
+@media (min-width: @screen-md) {
   .section-page-single {
     left: 50%;
     height: 100%;
@@ -56,13 +60,13 @@
     padding-top: 0px;
   }
 }
-@media (min-width: @screen-sm) {
+@media (min-width: @screen-md) {
   .section-page {
     z-index: 11;
     opacity: 0;
   }
 }
-@media (min-width: @screen-sm) {
+@media (min-width: @screen-md) {
   .page-mask {
     position: absolute;
     top: 0;
@@ -90,10 +94,12 @@
   transform-origin: 0% 50%;
   animation: rotatePullLeft .8s both ease;
 
-  @media (max-width: @screen-sm) {
+  @media screen and (max-width: @screen-md) {
     width: 100%;
     left: 0;
+    animation: none;
   }
+
 }
 .ps-scrollbar-y-rail {
   opacity: 0.9 !important;
@@ -106,14 +112,17 @@
   overflow-y: auto;
   background: @wood-dark;
   width: 90%;
-  transition: width .3s;
+  transition: all .3s;
   &.section-vcardbody-pgactive {
     width: 40%;
   }
-  @media (max-width: @screen-sm) {
+  @media (max-width: @screen-md) {
     &, &.section-vcardbody-pgactive {
       width: 100%;
     }
+  }
+  @media (min-width: @screen-md) {
+    margin-left: 0 !important;
   }
 }
 .vcard-profile-pic {
